@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="云端科技 www.yunduancn.com">
+	<title>梵思</title>
+	<link rel="stylesheet" href="css/minireset.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top_bar">
+			<div class="center">
+				<div class="top_bar_left">
+					<span>你好！欢迎来到梵思</span>
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+				<div class="top_bar_right">
+					<a href="">网站首页</a>
+					<a href="">企业会员</a>
+				</div>
+			</div>
+		</div>
+		<div class="center" style="position: relative; overflow: visible;">
+			<a href="" class="logo"></a>
+			<a href="" class="contact_btn contact_weixin"><i style="background-position: -41px 0px;"></i></a>
+			<div class="weixin_qrcode">
+				<div class="qr_box">
+					<img src="images/qr1.jpg" alt="">
+					<span>微信客服</span>
+				</div>
+				<div class="qr_box" style="border: 0;">
+					<img src="images/qr2.jpg" alt="">
+					<span>官方公众号</span>
+				</div>
+			</div>
+			<a href="tencent://message/?uin=0000000000&Site=我是中文&Menu=yes" class="contact_btn"><i style="background-position: 0px 0px;"></i></a>
+			<ul class="menu">
+				<li class="fir_item menu_on">
+					<a href="" class="fir_link">首页</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">aaaa</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">aaaa</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">aaaa</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">aaaa</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">关于我们</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">bbbb</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">bbbb</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">bbbb</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">bbbb</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">案例</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">cccc</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">cccc</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">cccc</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">cccc</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">价格体系</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">dddd</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">dddd</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">dddd</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">dddd</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">疑难解答</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">eeee</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">eeee</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">eeee</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">eeee</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">联系我们</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">ffff</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">ffff</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">ffff</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">ffff</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="back"></div>
+		</div>
+	</div>
+
+
+
+	<div class="banner">
+		<ul class="banner_slide">
+			<li><a href="" style="background-image: url(images/banner1.jpg);"></a></li>
+			<li><a href="" style="background-image: url(images/banner1.jpg);"></a></li>
+			<li><a href="" style="background-image: url(images/banner1.jpg);"></a></li>
+		</ul>
+		<div class="banner_left"></div>
+		<div class="banner_right"></div>
+		<script>
+			$('.banner').slide({
+				mainCell: '.banner_slide',
+				effect: 'leftLoop',
+				autoPlay: true,
+				prevCell: '.banner_left',
+				nextCell: '.banner_right'
+			})
+		</script>
+	</div>
+
+
+
+	<div class="keep_walking">
+		<div class="center">
+			<div class="keep_walking_text">
+				<div class="t1">KEEP WALKING</div>
+				<img src="images/logo_small.png" alt="" class="t2">
+				<div class="t3">创意无限 永远向前</div>
+				<div class="t4">公司以互联网+设计、线上+线下为经营思路，以诚信经营及高品质设计为企业理念，在全国范围内得到众多客户的肯定及认可。</div>
+				<div class="t5">梵思设计--创造出你的超级形象</div>
+			</div>
+			<ul class="four_card">
+				<div class="border"></div>
+				<li class="fc_on">
+					<!-- icon1 放默认图标，icon2 放鼠标经过时候的图标 -->
+					<div class="icon1">111</div>
+					<div class="icon2">222</div>
+					<div class="title_c">标志/VIS设计</div>
+					<div class="title_e">Logo/vis design</div>
+					<span class="text">标志设计</span>
+					<span class="text">字体设计</span>
+					<span class="text">VIS设计</span>
+					<a href="" class="more">- More -</a>
+				</li>
+				<div class="border"></div>
+				<li>
+					<div class="icon1">111</div>
+					<div class="icon2">222</div>
+					<div class="title_c">广告/平面设计</div>
+					<div class="title_e">Advertising</div>
+					<span class="text">画册设计</span>
+					<span class="text">海报设计</span>
+					<span class="text">导视设计</span>
+					<a href="" class="more">- More -</a>
+				</li>
+				<div class="border"></div>
+				<li>
+					<div class="icon1">111</div>
+					<div class="icon2">222</div>
+					<div class="title_c">包装/礼盒设计</div>
+					<div class="title_e">Packing design</div>
+					<span class="text">包装设计</span>
+					<span class="text">礼盒设计</span>
+					<span class="text">装帧设计</span>
+					<a href="" class="more">- More -</a>
+				</li>
+				<div class="border"></div>
+				<li>
+					<div class="icon1" style="background-image: url(images/i4.png);"></div>
+					<div class="icon2">222</div>
+					<div class="title_c">网络/界面设计</div>
+					<div class="title_e">Interface design</div>
+					<span class="text">网站设计</span>
+					<span class="text">APP设计</span>
+					<span class="text">电商设计</span>
+					<a href="" class="more">- More -</a>
+				</li>
+			</ul>
+			<div class="fc_back">
+				<div class="border_box"></div>
+			</div>
+			<script>
+				function fcBack(){
+					var backLeft = $('.fc_on').position().left-2;
+					$('.fc_back').css({
+						'left': backLeft
+					});
+					$('.fc_on').children('.icon1').css('display', 'none');
+					$('.fc_on').children('.icon2').css('display', 'block');
+					$('.fc_on').children('.text').addClass('text1').removeClass('text')
+					$('.fc_on').children('.title_c,.title_e,.text1').css('color', '#fff');
+				}
+				$(document).ready(function() {
+					fcBack();
+					$('.four_card').children('li').hover(function() {
+						var thisLeft = $(this).position().left-2;
+						$('.fc_back').css('left', thisLeft);
+
+
+						// 找到最初，去掉more
+						$('.fc_on').children('.more').css('display', 'none');
+						// 为当前添加more
+						$(this).children('.more').addClass('animated fadeInUp').css('display', 'block');
+
+
+						if ($(this).hasClass('fc_on')) {
+						} else { //如果当前不是最初
+							$('.fc_on').children('.text1').addClass('text').removeClass('text1');
+							$('.fc_on').children('.title_c,.title_e,.text').css('color', '#999999');
+							$(this).children('.text1').addClass('text').removeClass('text1');
+							$(this).children('.title_c,.title_e,.text').css('color', '#fff');
+							$('.fc_on').children('.icon1').css('display', 'block');
+							$('.fc_on').children('.icon2').css('display', 'none');
+							$(this).children('.icon1').css('display', 'none');
+							$(this).children('.icon2').css('display', 'block');
+						}
+
+					}, function() {
+						$(this).children('.more').css('display', 'none');
+						$('.fc_on').children('.more').css('display', 'block');
+						if ($(this).hasClass('fc_on')) {
+						} else {
+							$('.fc_on').children('.title_c,.title_e,.text').css('color', '#fff');
+							$(this).children('.title_c,.title_e,.text').css('color', '#999999');
+							$('.fc_on').children('.text').addClass('text1').removeClass('text')
+							$(this).children('.text1').addClass('text').removeClass('text1');
+						}
+						$(this).children('.icon1').css('display', 'block');
+						$(this).children('.icon2').css('display', 'none');
+						fcBack();
+					});
+				});
+			</script>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="center">
+		<ul class="case">
+			<li></li>
+		</ul>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
