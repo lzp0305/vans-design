@@ -740,13 +740,19 @@
       height: 42px;
       margin-top: 3px;
       text-align: center;
-      position: relative; }
+      position: relative;
+      background-image: url(../images/footer2.png);
+      background-repeat: no-repeat;
+      background-position: 100px 0; }
       .footer .footer_box .som_box .qq {
-        display: inline-block;
+        display: block;
         width: 42px;
         height: 42px;
         background-image: url(../images/QQ.png);
-        background-position: center; }
+        background-position: center;
+        position: absolute;
+        left: 53px;
+        top: 0; }
       .footer .footer_box .som_box button {
         display: block;
         width: 69px;
@@ -754,5 +760,13 @@
         border-radius: 3px;
         background-color: #4bb983;
         position: absolute;
-        left: 47px;
-        top: 6px; }
+        left: 101px;
+        top: 3px;
+        color: #fff;
+        cursor: pointer; }
+    .footer .footer_box .copyright {
+      text-align: center;
+      font-size: 12px;
+      color: #b2b2b2;
+      line-height: 17px;
+      margin-top: 15px; }
