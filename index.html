@@ -461,7 +461,7 @@
 			<li><a href="" style="background-image: url(images/l6.png);"></a></li>
 			<li><a href="" style="background-image: url(images/l7.png);"></a></li>
 			<li><a href="" style="background-image: url(images/l8.png);"></a></li>
-			<li><a href="" style="background-image: url(images/l5.png);"></a></li>
+			<li><a href="" style="background-image: url(images/l7.png);"></a></li>
 			<li><a href="" style="background-image: url(images/l6.png);"></a></li>
 		</ul>
 		<i class="cs_left fa fa-angle-left" aria-hidden="true"></i>
@@ -479,10 +479,206 @@
 	</div>
 
 
+	<div class="tsc">
+		<div class="center">
+			<!--
+			data-bgi		高斯模糊+黑色60%透明度 处理后的图片路径
+			data-icon-bgi	小图标路径
+			data-icon-tc	图标下面的中文标题
+			data-icon-te	图标下面的英文标题
+			data-text-tc	绿框中的中文
+			data-text-num	绿框中的数字
+			data-link		see more 的链接
+			-->
+			<div class="tsc_item team" style="background-image: url(images/tsc1.jpg);"
+			data-bgi="url(images/tsc1h.jpg)"
+			data-icon-bgi="url(images/team.png)"
+			data-icon-tc="团队介绍"
+			data-icon-te="Team Presentation"
+			data-text-tc="专业团队，品质保证"
+			data-text-num="01"
+			data-link="http://www.baidu.com"></div>
+
+			<div class="tsc_item service" style="background-image: url(images/tsc2.jpg);"
+			data-bgi="url(images/tsc2h.jpg)"
+			data-icon-bgi="url(images/team.png)"
+			data-icon-tc="服务"
+			data-icon-te="service"
+			data-text-tc="服务服务，服务服务"
+			data-text-num="02"
+			data-link="http://www.taobao.com"></div>
+
+			<div class="tsc_item contact" style="background-image: url(images/tsc3.jpg);"
+			data-bgi="url(images/tsc3h.jpg)"
+			data-icon-bgi="url(images/team.png)"
+			data-icon-tc="联系"
+			data-icon-te="contact"
+			data-text-tc="联系联系，联系联系"
+			data-text-num="03"
+			data-link="http://www.jd.com"></div>
+			<div class="tsc_box">
+				<div class="zz" style="background-image: url(images/tsc1h.jpg);">
+					<div class="icon_box">
+						<div class="icon" style="background-image: url(images/team.png);"></div>
+						<div class="wl"></div>
+						<div class="icon_tc">团队介绍</div>
+						<div class="icon_te">Team Presentation</div>
+					</div>
+				</div>
+				<div class="text_box">
+					<div class="text_tc">专业团队，品质保证</div>
+					<div class="text_num">01</div>
+				</div>
+				<div class="see_more">
+					<a href="" class="see_more_link">see more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					var oldLink = $('.team').attr('data-link');
+					$('.tsc_box').find('.see_more_link').attr('href', oldLink);
+				});
+				$('.tsc_item').hover(function() {
+					var tscLeft = $(this).position().left;
+					$('.tsc_box').css('left', tscLeft);
+					var dataBgi = $(this).attr('data-bgi');
+					$('.tsc_box').find('.zz').css('background-image', dataBgi);
+					var dataIconBgi = $(this).attr('data-icon-bgi');
+					$('.tsc_box').find('.icon').css('background-image', dataIconBgi);
+					var dataIconTc = $(this).attr('data-icon-tc');
+					$('.tsc_box').find('.icon_tc').text(dataIconTc);
+					var dataIconTe = $(this).attr('data-icon-te');
+					$('.tsc_box').find('.icon_te').text(dataIconTe);
+					var dataTextTc = $(this).attr('data-text-tc');
+					$('.tsc_box').find('.text_tc').text(dataTextTc);
+					var dataTextNum = $(this).attr('data-text-num');
+					$('.tsc_box').find('.text_num').text(dataTextNum);
+					var dataLink = $(this).attr('data-link');
+					$('.tsc_box').find('.see_more_link').attr('href', dataLink);;
+				}, function() {
+				});
+			</script>
+		</div>
+	</div>
+
+
+
+	<div class="dynamic center">
+		<div class="title_c">最新动态</div>
+		<div class="title_sub">全面发布企业及周边企业的最新动态，为你提供优质服务</div>
+		<div class="dynamic_box">
+			<ul class="main_box">
+				<li>
+					<img src="" alt="">
+					<div class="item">
+						<a href="" class="dynamic_title">企业CIS形象设计的要点和基本知识</a>
+						<div class="dynamic_date">2017-01-16</div>
+						<div class="dynamic_text">CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
+					</div>
+				</li>
+				<li>
+					<img src="" alt="">
+					<div class="item">
+						<a href="" class="dynamic_title">走向生活的多元化设计</a>
+						<div class="dynamic_date">2017-01-16</div>
+						<div class="dynamic_text">设计艺术与人类生活的密切关系,从设计艺术以最原始形态诞生起就已经决定了。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/0151fb57d172440000012e7e5f71d4.jpg@2o.jpg" alt="">
+					<div class="item">
+						<a href="" class="dynamic_title">漓江夜游</a>
+						<div class="dynamic_date">2017-01-16</div>
+						<div class="dynamic_text">设计艺术与人类生活的密切关系,从设计艺术以最原始形态诞生起就已经决定了。 拷贝CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/-先锋力量创意无限-.jpg" alt="">
+					<div class="item">
+						<a href="" class="dynamic_title">梵思理念</a>
+						<div class="dynamic_date">2017-01-16</div>
+						<div class="dynamic_text">公司致力于服务房地产的流通环节，期望以精准的战略，独到的创意和贴心的服务，探索一条房地产业的创新营销服务道路。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/0181435965415aa8012193a329d6aa.jpg@1280w_1l_2o_100sh.jpg" alt="">
+					<div class="item">
+						<a href="" class="dynamic_title">异域风光</a>
+						<div class="dynamic_date">2017-01-16</div>
+						<div class="dynamic_text">你也不知道，傍晚，落日的余晖洒在你的脸上有多美好，当下只希望时间能慢一点，如此便好。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
+					</div>
+				</li>
+			</ul>
+			<script>
+				$(document).ready(function() {
+					$('.dynamic_box').find('li').each(function(index, el) {
+						var asd = $(el).children('img').attr('src');
+						// console.log(asd);
+						if (asd == '') {
+							$(this).find('.dynamic_text').css('height', '294px');
+						} else {
+							$(this).find('.dynamic_text').css('height', '189px');
+							$(this).find('.item').css('padding-bottom', '9px');
+						}
+					});
+				});
+			</script>
+		</div>
+	</div>
 
 
 
 
+
+
+	<div class="footer">
+		<div class="center">
+			<ul class="link">
+				<li>
+					<div class="title">关于</div>
+					<a href="">什么是梵思设计</a>
+					<a href="">发展历程</a>
+					<a href="">加入我们</a>
+				</li>
+				<li>
+					<div class="title">合作</div>
+					<a href="">外地企业客户</a>
+					<a href="">本地企业客户</a>
+					<a href="">企业包年VIP会员服务</a>
+				</li>
+				<li>
+					<div class="title">意见</div>
+					<a href="">投诉建议</a>
+					<a href="">联系方式</a>
+					<a href="">留言</a>
+				</li>
+				<li>
+					<div class="title">声明</div>
+					<a href="">作品版权</a>
+					<a href="">商标申明</a>
+					<a href="">公司证件</a>
+					<a href="">法律责任</a>
+				</li>
+				<li>
+					<div class="title">导航</div>
+					<a href="">关于我们</a>
+					<a href="">成功案例</a>
+					<a href="">价格体系</a>
+					<a href="">疑难解答</a>
+					<a href="">联系我们</a>
+				</li>
+			</ul>
+			<div class="footer_box">
+				<a href="" class="footer_logo" style="background-image: url(images/footerlogo.png);"></a>
+				<div class="tel">400-990-3307</div>
+				<div class="som_box">
+					<a href="tencent://message/?uin=0000000000&Site=我是中文&Menu=yes" class="qq"></a>
+					<button>联系我们</button>
+				</div>
+				<div class="copyright">Copyright © 梵思机构 All Rights Reserved 版权<br>赣ICP备16007275号-1</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>
