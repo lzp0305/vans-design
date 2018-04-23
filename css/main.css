@@ -770,3 +770,108 @@
       color: #b2b2b2;
       line-height: 17px;
       margin-top: 15px; }
+
+.ny_banner {
+  width: 100%;
+  height: 320px;
+  background-color: #4bb983; }
+  .ny_banner .title_c {
+    font-size: 38px;
+    font-family: pingfang;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    margin-top: 97px; }
+  .ny_banner .title_e {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: pingfang;
+    text-align: center;
+    color: #fff;
+    margin-top: 24px; }
+  .ny_banner .icon {
+    text-align: center;
+    margin-top: 20px; }
+    .ny_banner .icon li {
+      display: inline-block;
+      background-image: url(../images/header.png);
+      width: 38px;
+      height: 36px;
+      background-repeat: no-repeat;
+      margin: 0 19px; }
+
+.about_main .title_c {
+  font-size: 24px;
+  line-height: 24px;
+  color: #404040;
+  font-family: pingfang;
+  text-align: center;
+  margin-top: 75px; }
+
+.about_main .title_e {
+  font-size: 18px;
+  line-height: 18px;
+  color: #808080;
+  text-align: center;
+  margin-top: 7px;
+  font-family: pingfang; }
+
+.about_main .sec_title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #595959;
+  text-align: center;
+  margin-top: 50px;
+  font-family: pingfang; }
+
+.about_main .sec_main {
+  font-size: 14px;
+  line-height: 25px;
+  color: #737373;
+  text-align: center;
+  font-family: pingfang;
+  margin-top: 15px;
+  margin-bottom: 45px; }
+
+.about_main .vans_img {
+  display: block;
+  width: 100%; }
+
+.about_main .vans_fac {
+  width: 100%;
+  height: 433px;
+  margin-top: 82px;
+  border-bottom: 1px dashed #0d1c36; }
+  .about_main .vans_fac li {
+    width: 466px;
+    height: 373px;
+    border-right: 1px solid #737373;
+    float: left; }
+    .about_main .vans_fac li .icon {
+      width: 74px;
+      height: 65px;
+      margin: 40px auto 0; }
+    .about_main .vans_fac li .title {
+      font-size: 26px;
+      line-height: 26px;
+      color: #404040;
+      text-align: center;
+      margin-top: 28px;
+      font-family: pingfang;
+      font-weight: bold; }
+    .about_main .vans_fac li .sub {
+      font-size: 18px;
+      line-height: 18px;
+      font-family: pingfang;
+      color: #595959;
+      margin-top: 13px;
+      text-align: center; }
+    .about_main .vans_fac li .main {
+      font-size: 15px;
+      line-height: 27px;
+      color: #737373;
+      font-family: pingfang;
+      margin-top: 40px;
+      text-align: left; }
+    .about_main .vans_fac li:last-child {
+      border-right: 0; }
