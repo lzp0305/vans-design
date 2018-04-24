@@ -886,3 +886,107 @@
     float: left; }
     .about_main .team_pic li img {
       display: block; }
+
+.contact_box {
+  padding-top: 102px;
+  width: 100%;
+  overflow: hidden; }
+  .contact_box .contact_left {
+    float: left;
+    width: 462px;
+    margin-left: 61px; }
+    .contact_box .contact_left li {
+      margin-bottom: 51px; }
+      .contact_box .contact_left li:last-child {
+        margin-bottom: 0; }
+      .contact_box .contact_left li .title_c {
+        font-size: 16px;
+        font-weight: bold;
+        color: #4c4c4c;
+        line-height: 16px;
+        display: inline-block; }
+      .contact_box .contact_left li .title_e {
+        font-size: 16px;
+        font-weight: bold;
+        color: #4c4c4c;
+        line-height: 16px;
+        display: inline-block;
+        margin-left: 17px; }
+      .contact_box .contact_left li .contact_add {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: pingfang;
+        color: #4c4c4c;
+        margin-top: 16px; }
+      .contact_box .contact_left li .contact_tel {
+        font-size: 16px;
+        line-height: 16px;
+        font-family: pingfang;
+        color: #4c4c4c;
+        margin-top: 13px; }
+  .contact_box .contact_center {
+    float: left;
+    width: 340px; }
+    .contact_box .contact_center .thank {
+      font-size: 16px;
+      color: #4c4c4c;
+      line-height: 26px;
+      margin-bottom: 32px; }
+    .contact_box .contact_center li {
+      margin-bottom: 36px; }
+      .contact_box .contact_center li:last-child {
+        margin-bottom: 0; }
+      .contact_box .contact_center li .title {
+        font-size: 16px;
+        line-height: 16px;
+        color: #4c4c4c;
+        font-weight: bold; }
+      .contact_box .contact_center li .tel {
+        font-size: 16px;
+        line-height: 16px;
+        color: #4c4c4c;
+        margin-top: 12px; }
+      .contact_box .contact_center li .email {
+        font-size: 16px;
+        line-height: 16px;
+        color: #4c4c4c;
+        margin-top: 10px; }
+  .contact_box .contact_right {
+    float: right;
+    width: 464px;
+    margin-right: 69px;
+    overflow: hidden; }
+    .contact_box .contact_right .small_logo {
+      width: 118px;
+      height: 48px;
+      float: right;
+      margin-bottom: 30px; }
+      .contact_box .contact_right .small_logo img {
+        width: 118px;
+        height: 48px;
+        display: block; }
+    .contact_box .contact_right .single {
+      display: block;
+      float: right;
+      width: 444px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 40px;
+      padding: 0 10px;
+      margin-bottom: 10px; }
+    .contact_box .contact_right .area {
+      width: 444px;
+      height: 206px;
+      border: 0;
+      resize: none;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    .contact_box .contact_right .submit {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      background-color: #4bb983;
+      color: #fff;
+      cursor: pointer; }
