@@ -990,3 +990,89 @@
       background-color: #4bb983;
       color: #fff;
       cursor: pointer; }
+
+.join_box {
+  width: 1314px;
+  border-top: 1px solid #d9d9d9;
+  margin: 60px auto 0;
+  overflow: hidden; }
+  .join_box .join_left {
+    float: left;
+    width: 233px; }
+    .join_box .join_left .title_c {
+      font-size: 20px;
+      line-height: 20px;
+      color: #595959;
+      font-family: pingfang;
+      margin-top: 50px; }
+    .join_box .join_left .title_e {
+      font-size: 18px;
+      line-height: 18px;
+      color: #808080;
+      font-family: pingfang;
+      margin-top: 9px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d9d9d9; }
+    .join_box .join_left .text_c {
+      font-size: 14px;
+      line-height: 24px;
+      color: #808080;
+      font-family: pingfang;
+      margin-top: 9px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #d9d9d9; }
+    .join_box .join_left .text_e {
+      font-size: 10px;
+      line-height: 14px;
+      color: #999999;
+      font-family: pingfang;
+      margin-top: 16px; }
+  .join_box .join_right {
+    float: right;
+    width: 1023px;
+    margin-top: 50px;
+    padding-right: 5px; }
+    .join_box .join_right li {
+      height: 185px;
+      margin-bottom: 70px; }
+      .join_box .join_right li .job {
+        float: left;
+        width: 229px;
+        height: 185px;
+        background-color: #4bb983;
+        font-size: 28px;
+        color: #fff;
+        line-height: 185px;
+        text-align: center; }
+      .join_box .join_right li .card {
+        padding-left: 58px;
+        width: 706px;
+        height: 185px;
+        float: right;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(35, 24, 21, 0.25);
+        position: relative; }
+        .join_box .join_right li .card .ask {
+          font-size: 16px;
+          line-height: 16px;
+          color: #666666;
+          font-weight: bold;
+          font-family: pingfang;
+          margin-top: 50px; }
+        .join_box .join_right li .card .main {
+          width: 406px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #737373;
+          margin-top: 10px;
+          font-family: pingfang; }
+        .join_box .join_right li .card .icon {
+          width: 255px;
+          height: 165px;
+          margin: 10px 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-left: 1px dashed #d9d9d9; }
