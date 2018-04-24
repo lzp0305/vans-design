@@ -1059,11 +1059,24 @@ $tran: all 0.3s;
 				line-height: 27px;
 				color: #737373;
 				font-family: pingfang;
-				margin-top: 40px;
 				text-align: left;
+				width: 300px;
+				margin: 40px auto 0
 			}
 			&:last-child {
 				border-right: 0;
+			}
+		}
+	}
+	.team_pic {
+		width: 1445px;
+		height: 658px;
+		li {
+			width: 289px;
+			height: 329px;
+			float: left;
+			img {
+				display: block;
 			}
 		}
 	}

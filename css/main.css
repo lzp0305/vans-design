@@ -871,7 +871,18 @@
       line-height: 27px;
       color: #737373;
       font-family: pingfang;
-      margin-top: 40px;
-      text-align: left; }
+      text-align: left;
+      width: 300px;
+      margin: 40px auto 0; }
     .about_main .vans_fac li:last-child {
       border-right: 0; }
+
+.about_main .team_pic {
+  width: 1445px;
+  height: 658px; }
+  .about_main .team_pic li {
+    width: 289px;
+    height: 329px;
+    float: left; }
+    .about_main .team_pic li img {
+      display: block; }
