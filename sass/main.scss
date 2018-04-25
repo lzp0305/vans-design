@@ -1874,4 +1874,75 @@ $tran: all 0.3s;
 			background-color: $green;
 		}
 	}
+	.case_list {
+		width: 1455px;
+		overflow: hidden;
+		li {
+			width: 430px;
+			height: 400px;
+			margin-right: 55px;
+			margin-bottom: 29px;
+			float: left;
+			.img {
+				display: block;
+				width: 100%;
+				height: 278px;
+				overflow: hidden;
+				img {
+					display: block;
+					height: 100%;
+				}
+			}
+			.title {
+				font-size: 16px;
+				line-height: 71px;
+				color: #737373;
+				text-align: center;
+				font-family: pingfang;
+				display: block;
+				transition: $tran;
+				&:hover {
+					background-color: $green;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.pagination {
+		width: 100%;
+		height: 80px;
+		border-bottom: 1px solid #d9d9d9;
+		text-align: center;
+		font-size: 0;
+		margin-bottom: 51px;
+		li {
+			display: inline-block;
+			margin: 26px 2px;
+			height: 22px;
+			border: 1px solid #b4b4b4;
+			transition: $tran;
+			a {
+				display: block;
+				font-size: 12px;
+				line-height: 22px;
+				color: #737373;
+				padding: 0 10px;
+				transition: $tran;
+			}
+			&:hover {
+				background-color: $green;
+				border: 1px solid $green;
+				a {
+					color: #fff;
+				}
+			}
+		}
+		.on {
+			background-color: $green;
+			border: 1px solid $green;
+			a {
+				color: #fff;
+			}
+		}
+	}
 }

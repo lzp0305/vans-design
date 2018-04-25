@@ -1548,3 +1548,61 @@
         background-color: #4bb983; }
     .case_box .classify .on {
       background-color: #4bb983; }
+  .case_box .case_list {
+    width: 1455px;
+    overflow: hidden; }
+    .case_box .case_list li {
+      width: 430px;
+      height: 400px;
+      margin-right: 55px;
+      margin-bottom: 29px;
+      float: left; }
+      .case_box .case_list li .img {
+        display: block;
+        width: 100%;
+        height: 278px;
+        overflow: hidden; }
+        .case_box .case_list li .img img {
+          display: block;
+          height: 100%; }
+      .case_box .case_list li .title {
+        font-size: 16px;
+        line-height: 71px;
+        color: #737373;
+        text-align: center;
+        font-family: pingfang;
+        display: block;
+        transition: all 0.3s; }
+        .case_box .case_list li .title:hover {
+          background-color: #4bb983;
+          color: #fff; }
+  .case_box .pagination {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 51px; }
+    .case_box .pagination li {
+      display: inline-block;
+      margin: 26px 2px;
+      height: 22px;
+      border: 1px solid #b4b4b4;
+      transition: all 0.3s; }
+      .case_box .pagination li a {
+        display: block;
+        font-size: 12px;
+        line-height: 22px;
+        color: #737373;
+        padding: 0 10px;
+        transition: all 0.3s; }
+      .case_box .pagination li:hover {
+        background-color: #4bb983;
+        border: 1px solid #4bb983; }
+        .case_box .pagination li:hover a {
+          color: #fff; }
+    .case_box .pagination .on {
+      background-color: #4bb983;
+      border: 1px solid #4bb983; }
+      .case_box .pagination .on a {
+        color: #fff; }
