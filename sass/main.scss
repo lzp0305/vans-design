@@ -2177,3 +2177,60 @@ $tran: all 0.3s;
 		}
 	}
 }
+
+
+
+.qa_box {
+	width: 1203px;
+	margin: 90px auto 0;
+	.qa_group {
+		width: 1257px;
+		overflow: hidden;
+		li {
+			width: 363px;
+			margin-right: 54px;
+			margin-bottom: 54px;
+			float: left;
+			position: relative;
+			border: 1px solid $green;
+			.mark {
+				width: 24px;
+				height: 35px;
+				position: absolute;
+				background-image: url(../images/mark.png);
+				background-position: center 0;
+				background-repeat: no-repeat;
+				top: 0;
+				left: 29px;
+				font-size: 13px;
+				line-height: 20px;
+				color: #fff;
+				text-align: center;
+			}
+			img {
+				display: block;
+				width: 363px;
+				height: 222px;
+			}
+			.q {
+				font-family: pingfang;
+				font-size: 16px;
+				line-height: 16px;
+				text-align: center;
+				color: $green;
+				margin-top: 39px;
+			}
+			.a {
+				width: 363px;
+				font-family: pingfang;
+				font-size: 14px;
+				line-height: 22px;
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+				height: 138px;
+				color: #595959;
+			}
+		}
+	}
+}
