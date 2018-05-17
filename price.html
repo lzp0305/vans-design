@@ -173,14 +173,14 @@
 				<div class="sub1">VIP会员</div>
 				<div class="sub2">不限量平面设计服务</div>
 			</div>
-			<div class="card_on">
+			<div class="card">
 				<div class="cate">包年</div>
 				<div class="price">15800 <span class="yuan">元</span><span class="per">/年</span></div>
 				<a href="" class="con">点击联系</a>
 				<div class="gb3"></div>
 				<div class="border"></div>
 			</div>
-			<div class="card">
+			<div class="card" style="margin-right: 73px;">
 				<div class="cate">包季</div>
 				<div class="price">7600 <span class="yuan">元</span><span class="per">/季度</span></div>
 				<a href="" class="con">点击联系</a>
@@ -188,6 +188,13 @@
 				<div class="border"></div>
 			</div>
 		</div>
+		<script>
+			$('.card').hover(function() {
+				$(this).removeClass('card').addClass('card_on')
+			}, function() {
+				$(this).removeClass('card_on').addClass('card')
+			});
+		</script>
 		<div class="general">
 			<div class="left">
 				<div class="gb1"></div>
@@ -197,7 +204,7 @@
 				<div class="sub1">普通会员</div>
 				<div class="sub2">一次储值两年有效，续费有效期顺延</div>
 			</div>
-			<div class="card">
+			<div class="card2">
 				<div class="cate">储值</div>
 				<div class="price price_r">10000 <span class="yuan">元</span>
 					<div class="give">（送2000元）</div>
@@ -205,7 +212,7 @@
 				<a href="" class="con">点击联系</a>
 				<div class="border"></div>
 			</div>
-			<div class="card">
+			<div class="card2">
 				<div class="cate">储值</div>
 				<div class="price price_r">5000 <span class="yuan">元</span>
 					<div class="give">（送500元）</div>
@@ -213,13 +220,20 @@
 				<a href="" class="con">点击联系</a>
 				<div class="border"></div>
 			</div>
-			<div class="card">
+			<div class="card2">
 				<div class="cate">储值</div>
 				<div class="price">2000 <span class="yuan">元</span></div>
 				<a href="" class="con">点击联系</a>
 				<div class="border"></div>
 			</div>
 		</div>
+		<script>
+			$('.card2').hover(function() {
+				$(this).addClass('card2_on').removeClass('card2')
+			}, function() {
+				$(this).addClass('card2').removeClass('card2_on')
+			});
+		</script>
 
 
 
@@ -267,22 +281,22 @@
 							<td class="c1">
 								<div class="t3">A</div>
 								<div class="t4">8项起步套餐</div>
-								<div class="t5">8 starter packages</div>
+								<div class="t5">8 Starter Packages</div>
 							</td>
 							<td class="c1">
 								<div class="t3">B</div>
 								<div class="t4">9~18项起步套餐</div>
-								<div class="t5">9~18 item package</div>
+								<div class="t5">9~18 Item Package</div>
 							</td>
 							<td class="c1">
 								<div class="t3">C</div>
 								<div class="t4">19~28项套餐</div>
-								<div class="t5">19~28 item package</div>
+								<div class="t5">19~28 Item Package</div>
 							</td>
 							<td class="c1" style="border-right: 0;">
 								<div class="t3">CI</div>
 								<div class="t4">形象策划设计</div>
-								<div class="t5">CI image planning and design</div>
+								<div class="t5">CI Image Planning And Design</div>
 							</td>
 						</tr>
 					</table>
@@ -774,13 +788,17 @@
 				titCell: '.price_for li'
 			})
 		</script>
+		<div class="pagei_box">
+			<a href="" class="prev_page">上一页</a>
+			<a href="" class="next_page">下一页</a>
+		</div>
 
 
 
 
 
 		<div class="down" style="background-image: url(images/download.jpg);">
-			<div class="title">更多VIS项目详情，您可以下载我们的VIS详单，选择您需要的项目。</div>
+			<div class="title">更多项目详情，您可以下载我们的项目详单，选择您需要的项目。</div>
 			<a href="" class="down_btn">下载</a>
 		</div>
 	</div>

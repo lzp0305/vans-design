@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="js/jquery.aniview.min.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -21,6 +22,7 @@
 					<span>你好！欢迎来到梵思</span>
 					<a href="">登录</a>
 					<a href="">注册</a>
+					<a href="">会员系统</a>
 				</div>
 				<div class="top_bar_right">
 					<a href="">网站首页</a>
@@ -32,10 +34,10 @@
 			<a href="" class="logo"></a>
 			<a href="" class="contact_btn contact_weixin"><i style="background-position: -41px 0px;"></i></a>
 			<div class="weixin_qrcode">
-				<div class="qr_box">
+<!-- 				<div class="qr_box">
 					<img src="images/qr1.jpg" alt="">
 					<span>微信客服</span>
-				</div>
+				</div> -->
 				<div class="qr_box" style="border: 0;">
 					<img src="images/qr2.jpg" alt="">
 					<span>官方公众号</span>
@@ -184,106 +186,67 @@
 			</div>
 			<ul class="four_card">
 				<div class="border"></div>
-				<li class="fc_on">
+				<li>
 					<!-- icon1 放默认图标，icon2 放鼠标经过时候的图标 -->
 					<div class="icon1" style="background-image: url(images/i1.png);"></div>
-					<div class="icon2" style="background-image: url(images/i1Hover.png);"></div>
-					<div class="title_c">标志/VIS设计</div>
-					<div class="title_e">Logo/vis design</div>
-					<span class="text">标志设计</span>
-					<span class="text">字体设计</span>
-					<span class="text">VIS设计</span>
-					<a href="" class="more">- More -</a>
+					<div class="bag">
+						<div class="bord">
+							<div class="icon2" style="background-image: url(images/i1Hover.png);"></div>
+							<div class="title_c">标志/VIS设计</div>
+							<div class="title_e">Logo/vis design</div>
+							<span class="text">标志设计</span>
+							<span class="text">字体设计</span>
+							<span class="text">VIS设计</span>
+							<a href="" class="more">- More -</a>
+						</div>
+					</div>
 				</li>
 				<div class="border"></div>
 				<li>
 					<div class="icon1" style="background-image: url(images/i2.png);"></div>
-					<div class="icon2" style="background-image: url(images/i2Hover.png);"></div>
-					<div class="title_c">广告/平面设计</div>
-					<div class="title_e">Advertising</div>
-					<span class="text">画册设计</span>
-					<span class="text">海报设计</span>
-					<span class="text">导视设计</span>
-					<a href="" class="more">- More -</a>
+					<div class="bag">
+						<div class="bord">
+							<div class="icon2" style="background-image: url(images/i2Hover.png);"></div>
+							<div class="title_c">广告/平面设计</div>
+							<div class="title_e">Advertising</div>
+							<span class="text">画册设计</span>
+							<span class="text">海报设计</span>
+							<span class="text">导视设计</span>
+							<a href="" class="more">- More -</a>
+						</div>
+					</div>
 				</li>
 				<div class="border"></div>
 				<li>
 					<div class="icon1" style="background-image: url(images/i3.png);"></div>
-					<div class="icon2" style="background-image: url(images/i3Hover.png);"></div>
-					<div class="title_c">包装/礼盒设计</div>
-					<div class="title_e">Packing design</div>
-					<span class="text">包装设计</span>
-					<span class="text">礼盒设计</span>
-					<span class="text">装帧设计</span>
-					<a href="" class="more">- More -</a>
+					<div class="bag">
+						<div class="bord">
+							<div class="icon2" style="background-image: url(images/i3Hover.png);"></div>
+							<div class="title_c">包装/礼盒设计</div>
+							<div class="title_e">Packing design</div>
+							<span class="text">包装设计</span>
+							<span class="text">礼盒设计</span>
+							<span class="text">装帧设计</span>
+							<a href="" class="more">- More -</a>
+						</div>
+					</div>
 				</li>
 				<div class="border"></div>
 				<li>
 					<div class="icon1" style="background-image: url(images/i4.png);"></div>
-					<div class="icon2" style="background-image: url(images/i4Hover.png);"></div>
-					<div class="title_c">网络/界面设计</div>
-					<div class="title_e">Interface design</div>
-					<span class="text">网站设计</span>
-					<span class="text">APP设计</span>
-					<span class="text">电商设计</span>
-					<a href="" class="more">- More -</a>
+					<div class="bag">
+						<div class="bord">
+							<div class="icon2" style="background-image: url(images/i4Hover.png);"></div>
+							<div class="title_c">网络/界面设计</div>
+							<div class="title_e">Interface design</div>
+							<span class="text">网站设计</span>
+							<span class="text">APP设计</span>
+							<span class="text">电商设计</span>
+							<a href="" class="more">- More -</a>
+						</div>
+					</div>
 				</li>
 			</ul>
-			<div class="fc_back">
-				<div class="border_box"></div>
-			</div>
-			<script>
-				function fcBack(){
-					var backLeft = $('.fc_on').position().left-2;
-					$('.fc_back').css({
-						'left': backLeft
-					});
-					$('.fc_on').children('.icon1').css('display', 'none');
-					$('.fc_on').children('.icon2').css('display', 'block');
-					$('.fc_on').children('.text').addClass('text1').removeClass('text')
-					$('.fc_on').children('.title_c,.title_e,.text1').css('color', '#fff');
-				}
-				$(document).ready(function() {
-					fcBack();
-					$('.four_card').children('li').hover(function() {
-						var thisLeft = $(this).position().left-2;
-						$('.fc_back').css('left', thisLeft);
-
-
-						// 找到最初，去掉more
-						$('.fc_on').children('.more').css('display', 'none');
-						// 为当前添加more
-						$(this).children('.more').addClass('animated fadeInUp').css('display', 'block');
-
-
-						if ($(this).hasClass('fc_on')) {
-						} else { //如果当前不是最初
-							$('.fc_on').children('.text1').addClass('text').removeClass('text1');
-							$('.fc_on').children('.title_c,.title_e,.text').css('color', '#999999');
-							$(this).children('.text1').addClass('text').removeClass('text1');
-							$(this).children('.title_c,.title_e,.text').css('color', '#fff');
-							$('.fc_on').children('.icon1').css('display', 'block');
-							$('.fc_on').children('.icon2').css('display', 'none');
-							$(this).children('.icon1').css('display', 'none');
-							$(this).children('.icon2').css('display', 'block');
-						}
-
-					}, function() {
-						$(this).children('.more').css('display', 'none');
-						$('.fc_on').children('.more').css('display', 'block');
-						if ($(this).hasClass('fc_on')) {
-						} else {
-							$('.fc_on').children('.title_c,.title_e,.text').css('color', '#fff');
-							$(this).children('.title_c,.title_e,.text').css('color', '#999999');
-							$('.fc_on').children('.text').addClass('text1').removeClass('text')
-							$(this).children('.text1').addClass('text').removeClass('text1');
-						}
-						$(this).children('.icon1').css('display', 'block');
-						$(this).children('.icon2').css('display', 'none');
-						fcBack();
-					});
-				});
-			</script>
 		</div>
 	</div>
 
@@ -293,9 +256,10 @@
 
 	<div class="center">
 		<ul class="case">
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case1.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case1.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
@@ -307,12 +271,14 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case2.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case2.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
 						<li><a href="">现代</a></li>
 						<li><a href="">LOGO</a></li>
 						<li><a href="">2017</a></li>
@@ -320,12 +286,14 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case3.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case3.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
 						<li><a href="">现代</a></li>
 						<li><a href="">LOGO</a></li>
 						<li><a href="">2017</a></li>
@@ -333,12 +301,14 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case4.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case4.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
 						<li><a href="">现代</a></li>
 						<li><a href="">LOGO</a></li>
 						<li><a href="">2017</a></li>
@@ -346,12 +316,14 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case5.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case5.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
 						<li><a href="">现代</a></li>
 						<li><a href="">LOGO</a></li>
 						<li><a href="">2017</a></li>
@@ -359,12 +331,14 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
-			<li class="case_item">
-				<a href="" class="case_link" style="background-image: url(images/case6.jpg);"></a>
-				<div class="cover">
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case6.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
 					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
 					<ul class="tag_box">
 						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
 						<li><a href="">现代</a></li>
 						<li><a href="">LOGO</a></li>
 						<li><a href="">2017</a></li>
@@ -372,6 +346,71 @@
 					<a href="" class="name">易天国际品牌LOGO设计</a>
 				</div>
 			</li>
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case6.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
+					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
+					<ul class="tag_box">
+						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">LOGO</a></li>
+						<li><a href="">2017</a></li>
+					</ul>
+					<a href="" class="name">易天国际品牌LOGO设计</a>
+				</div>
+			</li>
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case6.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
+					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
+					<ul class="tag_box">
+						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">LOGO</a></li>
+						<li><a href="">2017</a></li>
+					</ul>
+					<a href="" class="name">易天国际品牌LOGO设计</a>
+				</div>
+			</li>
+			<li class="case_item aniview" av-animation="flipInX">
+				<a class="case_link" style="background-image: url(images/case6.jpg);"></a>
+				<div class="cover"></div>
+				<div class="beyond_cover">
+					<div class="cover_logo" style="background-image: url(images/caseLogo2.png);"></div>
+					<ul class="tag_box">
+						<li><a href="">健身</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">现代</a></li>
+						<li><a href="">LOGO</a></li>
+						<li><a href="">2017</a></li>
+					</ul>
+					<a href="" class="name">易天国际品牌LOGO设计</a>
+				</div>
+			</li>
+			<script>
+				$('.case_item').hover(function() {
+					$(this).find('.cover_logo').addClass('animated fadeInDown')
+					$(this).find('.tag_box').find('li').addClass('animated fadeInDown')
+					$(this).find('.name').addClass('animated fadeInDown')
+					$(this).find('li').each(function(index, el) {
+						$(el).css('animation-delay', '0.'+index+'s');
+					});
+				}, function() {
+					$(this).find('.cover_logo').removeClass('animated fadeInDown')
+					$(this).find('.tag_box').find('li').removeClass('animated fadeInDown')
+					$(this).find('.name').removeClass('animated fadeInDown')
+				});
+				$(document).ready(function() {
+					$('.aniview').AniView();
+				});
+				$('.case_item').each(function(index, el) {
+					$(el).css('animation-delay', '0.'+index+'s');
+				});
+			</script>
 		</ul>
 	</div>
 	<script src="js/cover.js"></script>
@@ -401,16 +440,12 @@
 					enter: function ($element, dir) {
 						//每次进入前先把.trans类移除掉，以免后面调整位置的时候也产生过渡效果
 						var $content = $element.find('.cover').removeClass('trans');
-
 						//调整位置
 						$content.css(DIR_POS[dir]);
-
 						//reflow
 						$content[0].offsetWidth;
-
 						//启用过渡
 						$content.addClass('trans');
-
 						//滑入
 						$content.css({left: '0', top: '0'});
 					},
@@ -481,85 +516,81 @@
 
 	<div class="tsc">
 		<div class="center">
-			<!--
-			data-bgi		高斯模糊+黑色60%透明度 处理后的图片路径
-			data-icon-bgi	小图标路径
-			data-icon-tc	图标下面的中文标题
-			data-icon-te	图标下面的英文标题
-			data-text-tc	绿框中的中文
-			data-text-num	绿框中的数字
-			data-link		see more 的链接
-			-->
-			<div class="tsc_item team" style="background-image: url(images/tsc1.jpg);"
-			data-bgi="url(images/tsc1h.jpg)"
-			data-icon-bgi="url(images/team.png)"
-			data-icon-tc="团队介绍"
-			data-icon-te="Team Presentation"
-			data-text-tc="专业团队，品质保证"
-			data-text-num="01"
-			data-link="http://www.baidu.com"></div>
-
-			<div class="tsc_item service" style="background-image: url(images/tsc2.jpg);"
-			data-bgi="url(images/tsc2h.jpg)"
-			data-icon-bgi="url(images/team.png)"
-			data-icon-tc="服务"
-			data-icon-te="service"
-			data-text-tc="服务服务，服务服务"
-			data-text-num="02"
-			data-link="http://www.taobao.com"></div>
-
-			<div class="tsc_item contact" style="background-image: url(images/tsc3.jpg);"
-			data-bgi="url(images/tsc3h.jpg)"
-			data-icon-bgi="url(images/team.png)"
-			data-icon-tc="联系"
-			data-icon-te="contact"
-			data-text-tc="联系联系，联系联系"
-			data-text-num="03"
-			data-link="http://www.jd.com"></div>
-			<div class="tsc_box">
-				<div class="zz" style="background-image: url(images/tsc1h.jpg);">
-					<div class="icon_box">
-						<div class="icon" style="background-image: url(images/team.png);"></div>
-						<div class="wl"></div>
-						<div class="icon_tc">团队介绍</div>
-						<div class="icon_te">Team Presentation</div>
+			<div class="tsc_item team">
+				<img src="images/tsc1.jpg" alt="">
+				<div class="tsc_box">
+					<div class="zz" style="background-image: url(images/tsc1h.jpg);">
+						<div class="icon_box">
+							<div class="icon" style="background-image: url(images/team.png);"></div>
+							<div class="wl"></div>
+							<div class="icon_tc">团队介绍</div>
+							<div class="icon_te">Team Presentation</div>
+						</div>
+					</div>
+					<div class="text_box">
+						<div class="text_tc">专业团队，品质保证</div>
+						<div class="text_num">01</div>
+					</div>
+					<div class="see_more">
+						<a href="" class="see_more_link">see more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<div class="text_box">
-					<div class="text_tc">专业团队，品质保证</div>
-					<div class="text_num">01</div>
-				</div>
-				<div class="see_more">
-					<a href="" class="see_more_link">see more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			</div>
+			<div class="tsc_item service">
+				<img src="images/tsc2.jpg" alt="">
+				<div class="tsc_box">
+					<div class="zz" style="background-image: url(images/tsc2h.jpg);">
+						<div class="icon_box">
+							<div class="icon" style="background-image: url(images/service.png);"></div>
+							<div class="wl"></div>
+							<div class="icon_tc">服务内容</div>
+							<div class="icon_te">Service Content</div>
+						</div>
+					</div>
+					<div class="text_box">
+						<div class="text_tc">专业服务，品质保证</div>
+						<div class="text_num">02</div>
+					</div>
+					<div class="see_more">
+						<a href="" class="see_more_link">see more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
-			<script>
-				$(document).ready(function() {
-					var oldLink = $('.team').attr('data-link');
-					$('.tsc_box').find('.see_more_link').attr('href', oldLink);
-				});
-				$('.tsc_item').hover(function() {
-					var tscLeft = $(this).position().left;
-					$('.tsc_box').css('left', tscLeft);
-					var dataBgi = $(this).attr('data-bgi');
-					$('.tsc_box').find('.zz').css('background-image', dataBgi);
-					var dataIconBgi = $(this).attr('data-icon-bgi');
-					$('.tsc_box').find('.icon').css('background-image', dataIconBgi);
-					var dataIconTc = $(this).attr('data-icon-tc');
-					$('.tsc_box').find('.icon_tc').text(dataIconTc);
-					var dataIconTe = $(this).attr('data-icon-te');
-					$('.tsc_box').find('.icon_te').text(dataIconTe);
-					var dataTextTc = $(this).attr('data-text-tc');
-					$('.tsc_box').find('.text_tc').text(dataTextTc);
-					var dataTextNum = $(this).attr('data-text-num');
-					$('.tsc_box').find('.text_num').text(dataTextNum);
-					var dataLink = $(this).attr('data-link');
-					$('.tsc_box').find('.see_more_link').attr('href', dataLink);;
-				}, function() {
-				});
-			</script>
+			<div class="tsc_item contact">
+				<img src="images/tsc3.jpg" alt="">
+				<div class="tsc_box">
+					<div class="zz" style="background-image: url(images/tsc3h.jpg);">
+						<div class="icon_box">
+							<div class="icon" style="background-image: url(images/contact.png);"></div>
+							<div class="wl"></div>
+							<div class="icon_tc">联系我们</div>
+							<div class="icon_te">Contact Us</div>
+						</div>
+					</div>
+					<div class="text_box">
+						<div class="text_tc">品质服务，联系我们</div>
+						<div class="text_num">03</div>
+					</div>
+					<div class="see_more">
+						<a href="" class="see_more_link">see more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<script>
+		$('.tsc_item').hover(function() {
+			$(this).children().addClass('animated fadeIn')
+			$(this).children().children().addClass('animated fadeIn')
+			$(this).children().children().children().addClass('animated fadeIn')
+			$(this).children().children().children().children().addClass('animated fadeIn')
+		}, function() {
+			$(this).children().removeClass('animated fadeIn')
+			$(this).children().children().removeClass('animated fadeIn')
+			$(this).children().children().children().removeClass('animated fadeIn')
+			$(this).children().children().children().children().removeClass('animated fadeIn')
+		});
+	</script>
 
 
 
@@ -568,11 +599,15 @@
 		<div class="title_sub">全面发布企业及周边企业的最新动态，为你提供优质服务</div>
 		<div class="dynamic_box">
 			<ul class="main_box">
+			</ul>
+
+			<ul class="main_box2">
 				<li>
 					<img src="" alt="">
 					<div class="item">
 						<a href="" class="dynamic_title">企业CIS形象设计的要点和基本知识</a>
 						<div class="dynamic_date">2017-01-16</div>
+						<div class="dy_line"></div>
 						<div class="dynamic_text">CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
 					</div>
 				</li>
@@ -581,6 +616,7 @@
 					<div class="item">
 						<a href="" class="dynamic_title">走向生活的多元化设计</a>
 						<div class="dynamic_date">2017-01-16</div>
+						<div class="dy_line"></div>
 						<div class="dynamic_text">设计艺术与人类生活的密切关系,从设计艺术以最原始形态诞生起就已经决定了。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
 					</div>
 				</li>
@@ -589,6 +625,7 @@
 					<div class="item">
 						<a href="" class="dynamic_title">漓江夜游</a>
 						<div class="dynamic_date">2017-01-16</div>
+						<div class="dy_line"></div>
 						<div class="dynamic_text">设计艺术与人类生活的密切关系,从设计艺术以最原始形态诞生起就已经决定了。 拷贝CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
 					</div>
 				</li>
@@ -597,6 +634,7 @@
 					<div class="item">
 						<a href="" class="dynamic_title">梵思理念</a>
 						<div class="dynamic_date">2017-01-16</div>
+						<div class="dy_line"></div>
 						<div class="dynamic_text">公司致力于服务房地产的流通环节，期望以精准的战略，独到的创意和贴心的服务，探索一条房地产业的创新营销服务道路。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
 					</div>
 				</li>
@@ -605,6 +643,7 @@
 					<div class="item">
 						<a href="" class="dynamic_title">异域风光</a>
 						<div class="dynamic_date">2017-01-16</div>
+						<div class="dy_line"></div>
 						<div class="dynamic_text">你也不知道，傍晚，落日的余晖洒在你的脸上有多美好，当下只希望时间能慢一点，如此便好。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。CIS的定义是企业形象识别系统，英文为"Corporate Identity System"，简称CI。他是针对企业经营理念与精神文化，运用整体传达给企业内部与社会大众，并使其对企业产生一致的认同感或价值观，从而达到形成良好的企业形象和促销产品的设计系统。</div>
 					</div>
 				</li>

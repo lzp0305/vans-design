@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="js/jquery.aniview.min.js"></script>
 </head>
 <body style="background-color: #ededed;">
 	<div class="header" style="height: 90px;">
@@ -163,50 +164,387 @@
 
 	<div class="case_box">
 		<ul class="classify">
-			<li class="on"><a href="">全部</a></li>
-			<li><a href="">平面类</a></li>
-			<li><a href="">3D类</a></li>
-			<li><a href="">VR</a></li>
+			<li class="ci1 on"><a class="cl1" href="javascript:void(0);">全部</a></li>
+			<li class="ci1">
+				<a class="cl1" href="javascript:void(0);">平面类</a>
+				<ul class="subclassify">
+					<li class="ci2 son"><a class="cl2" href="">全部</a></li>
+					<li class="ci2"><a class="cl2" href="">标志设计</a></li>
+					<li class="ci2"><a class="cl2" href="">广告设计</a></li>
+					<li class="ci2"><a class="cl2" href="">包装设计</a></li>
+					<li class="ci2"><a class="cl2" href="">VIS设计</a></li>
+					<li class="ci2"><a class="cl2" href="">界面设计</a></li>
+				</ul>
+			</li>
+			<li class="ci1">
+				<a class="cl1" href="javascript:void(0);">3D类</a>
+				<ul class="subclassify">
+					<li class="ci2 son"><a class="cl2" href="">全部</a></li>
+					<li class="ci2"><a class="cl2" href="">aaa</a></li>
+					<li class="ci2"><a class="cl2" href="">bbb</a></li>
+					<li class="ci2"><a class="cl2" href="">ccc</a></li>
+					<li class="ci2"><a class="cl2" href="">ddd</a></li>
+					<li class="ci2"><a class="cl2" href="">eee</a></li>
+				</ul>
+			</li>
+			<li class="ci1">
+				<a class="cl1" href="javascript:void(0);">VR</a>
+				<ul class="subclassify">
+					<li class="ci2 son"><a class="cl2" href="">全部</a></li>
+					<li class="ci2"><a class="cl2" href="">fff</a></li>
+					<li class="ci2"><a class="cl2" href="">ggg</a></li>
+					<li class="ci2"><a class="cl2" href="">hhh</a></li>
+					<li class="ci2"><a class="cl2" href="">iii</a></li>
+					<li class="ci2"><a class="cl2" href="">jjj</a></li>
+				</ul>
+			</li>
 		</ul>
+		<script>
+			$('.ci1').click(function() {
+				if ($(this).children('ul').hasClass('subclassify')) {
+					$('.classify').css('margin-bottom', '110px');
+					$(this).addClass('on');
+					$(this).prevAll('.ci1').removeClass('on');
+					$(this).nextAll('.ci1').removeClass('on');
+					$(this).prevAll('.ci1').children('.subclassify').css('display', 'none');
+					$(this).nextAll('.ci1').children('.subclassify').css('display', 'none');
+					$(this).children('.subclassify').css('display', 'block');
+				} else {
+					$('.subclassify').css('display', 'none');
+					$('.classify').css('margin-bottom', '50px');
+					$(this).addClass('on');
+					$(this).prevAll('.ci1').removeClass('on');
+					$(this).nextAll('.ci1').removeClass('on');
+				}
+			});
+		</script>
 		<div class="center">
 			<ul class="case_list">
 				<li>
-					<a href="" class="img"><img src="images/al1.jpg" alt=""></a>
-					<a href="" class="title">筑居上品装饰标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al1.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al2.jpg" alt=""></a>
-					<a href="" class="title">墩子塘食品标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al2.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al3.jpg" alt=""></a>
-					<a href="" class="title">雍品会餐饮标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al3.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al4.jpg" alt=""></a>
-					<a href="" class="title">香港茂丰集团标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al4.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al5.jpg" alt=""></a>
-					<a href="" class="title">易天国际健身标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX aniview" av-animation="flipInX"><img src="images/al5.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al6.jpg" alt=""></a>
-					<a href="" class="title">乐智教育标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al6.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al7.jpg" alt=""></a>
-					<a href="" class="title">真馆三号装饰标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al7.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al8.jpg" alt=""></a>
-					<a href="" class="title">赣州亿通标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al8.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 				<li>
-					<a href="" class="img"><img src="images/al9.jpg" alt=""></a>
-					<a href="" class="title">起点影像标志设计</a>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al9.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al1.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al2.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al3.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al4.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al5.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al6.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al7.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al8.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al9.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al1.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al2.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al3.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al4.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al5.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al6.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al7.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al8.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li>
+					<a href="" class="img aniview" av-animation="flipInX"><img src="images/al9.jpg" alt=""></a>
+					<div class="sha">
+						<div class="t1">VANS</div>
+						<div class="t2">DESIGN</div>
+						<div class="t3"></div>
+						<a href="" class="t4">墩子塘食品标志设计</a>
+						<div class="t5">梵思出品</div>
+						<a href="" class="t6"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
 				</li>
 			</ul>
+			<script>
+				$('.case_list').children('li').hover(function() {
+					$(this).find('.t1').addClass('animated fadeInDown')
+					$(this).find('.t2').addClass('animated fadeInDown')
+					$(this).find('.t3').addClass('animated fadeInDown')
+					$(this).find('.t4').addClass('animated fadeInDown')
+					$(this).find('.t5').addClass('animated fadeInDown')
+					$(this).find('.t6').addClass('animated fadeInDown')
+				}, function() {
+					$(this).find('.t1').removeClass('animated fadeInDown')
+					$(this).find('.t2').removeClass('animated fadeInDown')
+					$(this).find('.t3').removeClass('animated fadeInDown')
+					$(this).find('.t4').removeClass('animated fadeInDown')
+					$(this).find('.t5').removeClass('animated fadeInDown')
+					$(this).find('.t6').removeClass('animated fadeInDown')
+				});
+				$(document).ready(function(){
+					var options = {
+						animateThreshold: 100
+					}
+					$('.aniview').AniView(options);
+					$('.case_list').children('li').css('animation-duration', '0.5s');
+					$('.case_list').children('li').each(function(index, el) {
+						$(el).css('animation-delay', '0.'+index+'s');
+					});
+				})
+			</script>
 		</div>
 		<ul class="pagination">
 			<li><a href="">首页</a></li>
